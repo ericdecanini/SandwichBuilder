@@ -16,11 +16,4 @@
         android:textSize="18sp"
         android:text="Number of Sandiwches: 0" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:text="+" />
-
 </LinearLayout>
