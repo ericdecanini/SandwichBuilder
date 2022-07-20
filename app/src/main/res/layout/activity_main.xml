@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:text="Number of Sandiwches: 0" />
+        android:text="Number of sandwiches: 0" />
 
     <Button
         android:id="@+id/add_button"
