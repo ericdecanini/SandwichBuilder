@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
             numberOfSandwiches += 1
             sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
         }
+
+        minus_button.setOnClickListener {
+            numberOfSandwiches -= 1
+            sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
+        }
     }
 }
