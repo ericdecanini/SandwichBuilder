@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         add_button.setOnClickListener {
-            numberOfSandwiches = numberOfSandwiches + 1
-            println("Number of sandwiches: " + numberOfSandwiches)
+            numberOfSandwiches += 1
+            println("Number of sandwiches: $numberOfSandwiches")
         }
     }
 }
