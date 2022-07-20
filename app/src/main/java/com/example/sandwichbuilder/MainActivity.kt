@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             numberOfSandwiches -= 1
             sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
         }
+
+        submit_button.setOnClickListener {
+            var totalCost = numberOfSandwiches * 5
+            total_cost_textview.text = "Total cost: $$totalCost"
+        }
     }
 }
