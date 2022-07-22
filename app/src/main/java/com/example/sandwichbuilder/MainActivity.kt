@@ -14,17 +14,17 @@ class MainActivity : AppCompatActivity() {
 
         add_button.setOnClickListener {
             numberOfSandwiches += 1
-            sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
+            sandwiches_textview.text = numberOfSandwiches.toString()
         }
 
         minus_button.setOnClickListener {
             numberOfSandwiches -= 1
-            sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
+            sandwiches_textview.text = numberOfSandwiches.toString()
         }
 
         submit_button.setOnClickListener {
             var totalCost = numberOfSandwiches * 5
-            total_cost_textview.text = "Total cost: $$totalCost"
+            total_cost_textview.text = totalCost.toString()
         }
     }
 }
