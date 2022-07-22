@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         add_button.setOnClickListener {
             numberOfSandwiches += 1
-            println("Number of sandwiches: $numberOfSandwiches")
+            println(numberOfSandwiches)
         }
     }
 }
