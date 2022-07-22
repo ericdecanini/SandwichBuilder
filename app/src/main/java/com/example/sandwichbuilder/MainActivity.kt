@@ -15,17 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         add_button.setOnClickListener {
             numberOfSandwiches += 1
-            sandwiches_textview.text = "Number of sandwiches: 2"
+            sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
         }
 
         minus_button.setOnClickListener {
             numberOfSandwiches -= 1
-            sandwiches_textview.text = "Number of sandwiches: 2"
+            sandwiches_textview.text = "Number of sandwiches: $numberOfSandwiches"
         }
 
         submit_button.setOnClickListener {
             val totalCost = numberOfSandwiches * sandwichPrice
-            total_cost_textview.text = "Total cost: $10"
+            total_cost_textview.text = "Total cost: $$totalCost"
         }
     }
 }
