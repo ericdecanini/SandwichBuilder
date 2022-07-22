@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     var numberOfSandwiches = 0
+    val sandwichPrice = 5
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         submit_button.setOnClickListener {
-            var totalCost = numberOfSandwiches * 5
+            val totalCost = numberOfSandwiches * sandwichPrice
             total_cost_textview.text = "Total cost: $$totalCost"
         }
     }
