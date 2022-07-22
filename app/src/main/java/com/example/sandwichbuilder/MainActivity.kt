@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
 
     var numberOfSandwiches = 0
     val sandwichPrice = 5
+    val currency = "$"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         submit_button.setOnClickListener {
             val totalCost = numberOfSandwiches * sandwichPrice
-            total_cost_textview.text = "Total cost: $$totalCost"
+            total_cost_textview.text = "Total cost: $currency$totalCost"
         }
     }
 }
