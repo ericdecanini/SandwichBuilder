@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         add_button.setOnClickListener {
             numberOfSandwiches += 1
-            sandwiches_textview.setText(numberOfSandwiches)
+            sandwiches_textview.text = numberOfSandwiches.toString()
         }
     }
 }
