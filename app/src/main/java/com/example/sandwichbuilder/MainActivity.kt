@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         submit_button.setOnClickListener {
             val totalCost = numberOfSandwiches * sandwichPrice
-            total_cost_textview.text = "Total cost: $totalCost"
+            total_cost_textview.text = "Total cost: $$totalCost"
         }
     }
 }
