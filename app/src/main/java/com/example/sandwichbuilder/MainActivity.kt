@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        sandwich_price_textview.text = "Sandwich price: $currency$sandwichPrice"
+        calculatePricePerSandwich()
 
         add_button.setOnClickListener {
             numberOfSandwiches += 1
@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         cheese_checkbox.setOnCheckedChangeListener { buttonView, isChecked ->
             addCheese = isChecked
+            calculatePricePerSandwich()
         }
     }
 
