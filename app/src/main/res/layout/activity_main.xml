@@ -38,6 +38,13 @@
 
     </LinearLayout>
 
+    <CheckBox
+        android:id="@+id/cheese_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Cheese ($1)" />
+
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content"

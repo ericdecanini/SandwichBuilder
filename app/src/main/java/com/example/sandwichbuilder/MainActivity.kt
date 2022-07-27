@@ -29,5 +29,9 @@ class MainActivity : AppCompatActivity() {
             val totalCost = numberOfSandwiches * sandwichPrice
             total_cost_textview.text = "Total cost: $currency$totalCost"
         }
+
+        cheese_checkbox.setOnCheckedChangeListener { buttonView, isChecked ->
+
+        }
     }
 }
