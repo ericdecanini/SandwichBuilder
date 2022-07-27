@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     var numberOfSandwiches = 0
-    val sandwichPrice = 5
+    var sandwichPrice = 5
     val currency = "$"
 
     var addCheese = false
@@ -35,5 +35,14 @@ class MainActivity : AppCompatActivity() {
         cheese_checkbox.setOnCheckedChangeListener { buttonView, isChecked ->
             addCheese = isChecked
         }
+    }
+
+    fun calculatePricePerSandwich() {
+        sandwichPrice = 5
+        if (addCheese) {
+            sandwichPrice += 1
+        }
+
+        sandwich_price_textview.text = "Sandwich price: $currency$sandwichPrice"
     }
 }
