@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
     val sandwichPrice = 5
     val currency = "$"
 
+    var addCheese = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         cheese_checkbox.setOnCheckedChangeListener { buttonView, isChecked ->
-
+            addCheese = isChecked
         }
     }
 }
